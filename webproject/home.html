@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: 'Times New Roman', Times, serif;}
+body, html {height: 100%}
+.bgimg {
+  background-image: url(blackwallpaper.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p style="color: black; background-color: rgb(156, 135, 181);">WELCOME TO THE FOOD DELIVERY</p>
+  </div>
+  
+  
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">FAQ</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">Contact Us</button></p>
+    <form action="home2.html" method="POST">
+      <button class="button" style="background-color: black; color: white;">Start Order</button>
+  </form><br>
+    <form action="login.html">
+      <button class="button" style="background-color: black; color: white;">Login</button>
+    </form>
+  </div><br>
+
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge"> FOOD DELIVERY SYSTEM</p>
+    <p>produced by NurSyuhaidah Fuad</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Are all Fast Food is available here?</h1>
+    </div>
+    <div class="w3-container">
+      <p>No, our system take order from the top recommended restaurant in Malaysia.</p>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Are all food in good quality?</h1>
+    </div>
+    <div class="w3-container">
+      <p>Absolutely yes!</p>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Is the delivery take a long time to arrive?</h1>
+    </div>
+    <div class="w3-container">
+      <p>Its depends on the distance from the restaurants to the customers house. But absolutely our service will do the best to make sure the food arrived ASAP! </p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact Us</h1>
+    </div>
+    <div class="w3-container">
+        <p>Office Number: 03-4236079</p>
+        <p>Email to: myfooddelivery@gmail.com</p>
+        <p>Directly Message: 013-4236079 (Pn.Nur)/017-4682949(En.Aiman)</p>
+        <p>HeadQuaters: Queensbay, Balik Pulau, Pulau Pinang</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
